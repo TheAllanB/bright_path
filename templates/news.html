@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="news-container">
+    <form action="{{ url_for('news_page') }}" method="POST" class="news-form">
+        <input type="text" name="news_prompt" placeholder="Search for student-related news..." required>
+        <button type="submit">Update Feed</button>
+    </form>
+
+    <div class="news-grid">
+        {% for article in news_articles %}
+        <div class="news-card">
+            <img src="{{ article.thumbnail_url }}" alt="Thumbnail" class="news-thumbnail">
+            <h3 class="news-title">{{ article.title }}</h3>
+            <p class="news-description">{{ article.description }}</p>
+            <a href="{{ article.url }}" class="news-link" target="_blank">Read More</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Button to load more articles -->
+    <form action="{{ url_for('news_page') }}" method="POST" class="load-more-form">
+        <input type="hidden" name="news_prompt" value="{{ request.form.news_prompt }}">
+        <button type="submit">Load More</button>
+    </form>
+</div>
+{% endblock %}

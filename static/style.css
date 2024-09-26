@@ -1,0 +1,252 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* News form */
+.news-form {
+    margin-bottom: 20px;
+}
+
+.news-form input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.news-form button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-form button:hover {
+    background-color: #0056b3;
+}
+
+/* News article styling */
+.news-articles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-articles li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.news-articles h3 {
+    margin: 0 0 10px;
+}
+
+.news-articles p {
+    margin: 0 0 10px;
+}
+
+.news-articles a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.news-articles a:hover {
+    text-decoration: underline;
+}
+
+/* Load more button */
+#load-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-more-btn:hover {
+    background-color: #218838;
+}
+
+.news-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.news-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-form input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.news-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news-thumbnail {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.news-description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.news-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+.load-more-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.load-more-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.review-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.review-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-form input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-content {
+    margin-top: 20px;
+}
+
+.review-content h2 {
+    color: #007bff;
+}
+
+.youtube-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.youtube-links li {
+    margin: 10px 0;
+}
+
+.youtube-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.youtube-links a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
